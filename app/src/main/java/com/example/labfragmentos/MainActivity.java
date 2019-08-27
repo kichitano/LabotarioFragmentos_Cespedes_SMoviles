@@ -11,12 +11,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ParrafoFragment parrafoFragment = new ParrafoFragment();
-/*
-        getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.fragment_container, parrafoFragment)
-                .commit();
-*/
+        //Contenedor
+        if (findViewById(R.id.fragment_container) != null) {
+
+            if (savedInstanceState != null) {
+                return;
+            }
+            //Crear el nuevo Fragmento
+            TituloFragment tituloFragment = new TituloFragment();
+
+            //Agregar extras si existen
+            tituloFragment.setArguments(getIntent().getExtras());
+
+            //Lanzar la vista del fragmento
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, tituloFragment)
+                    .commit();
+
+        }
     }
 }
