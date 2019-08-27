@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">LabFragmentos</string>
+    <string name="app_name">Laboratorio Fragmentos"</string>
+    <string name="str_titulo">Laboratorio</string>
+    <string name="str_parrafo">haring economy, gender rights;
+    informal economies Martin Luther King Jr. crowdsourcing
+    policymakers eradicate equity. Save lives time of
+    extraordinary change; empowerment equality stakeholders
+    Kony 2012 expanding community ownership.</string>
+    <string name="todo">TODO</string>
 </resources>
+
